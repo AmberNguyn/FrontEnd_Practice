@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+.domeSpecs {
+   font-size: 16px;
+   margin: 0 0 20px 20px;
+   float: right;
+   border-collapse: collapse;
+
+   /* 10 */
+   background-image: url('/tableback.png');
+   background-position: bottom right;
+   background-repeat: no-repeat;
+   background-size:cover;
+}
+
+/* every td in domespecs */
+.domeSpecs tr td {
+   padding: 0 5px;
+
+}
+
+.domeSpecs caption {
+   font-size: 18px;
+   letter-spacing: 5px;
+   text-align: center;
+   caption-side:top;
+   margin: 0 0 10px;
+}
+
+.domeSpecs thead th {
+   border-bottom: 2px solid gray;
+   background-image: url('/top.jpg');
+   background-position: top;
+   background-repeat: repeat-x;
+
+   /* 15 */
+   padding: 0 5px;
+   letter-spacing: 2px;
+}
+
+
+
+
+
+.domeSpecs tr {
+   height: 40px;
+}
+
+/* 16 */
+
+.domeSpecs thead th:first-of-type {
+   background-image: url('/topleft.jpg');
+   background-repeat: no-repeat;
+   background-position: top left;
+}
+
+.domeSpecs thead th:last-of-type {
+   background-image: url('/topright.jpg');
+   background-repeat: no-repeat;
+   background-position: top right;
+}
+
+
+
+
+.domeSpecs tfoot {
+   border-top: 2px solid gray;
+   text-align: center;
+   background-image: url('/bottom.jpg');
+   background-repeat: repeat-x;
+   background-position: bottom;
+}
+
+.domeSpecs tfoot tr {
+   height: 40px;
+}
+
+/* 19 */
+
+.domeSpecs tfoot tr td:first-of-type {
+   background-image: url('/bottomleft.jpg');
+   background-repeat: no-repeat;
+   background-position: bottom left;
+}
+
+.domeSpecs tfoot tr td:last-of-type {
+   background-image: url('/bottomright.jpg');
+   background-repeat: no-repeat;
+   background-position: bottom right;
+}
+
+
+.domeSpecs tbody tr {
+   height: 50px;
+   border-bottom: 1px dotted gray;
+}
+
+.domeSpecs tbody tr td:first-of-type {
+   background-image: url('/left.jpg');
+   background-repeat: repeat-y;
+   background-position: top left;
+}
+
+.domeSpecs tbody tr td:last-of-type {
+   background-image: url('/right.jpg');
+   background-repeat: repeat-y;
+   background-position: top right;
+   text-align: right;
+}
+
+.domeSpecs tbody tr:nth-of-type(even) {
+   background-color: rgba(152,228,215,60%);
+}
+
+.domeSpecs tbody tr:nth-of-type(odd) {
+   background-color: rgba(255,255,255,60%);
+}
+
+col .firstColumn,
+col .lastColumn {
+   width: 22%;
+}
+
+col .middleColumn {
+   width: 28%;
+}
+
+

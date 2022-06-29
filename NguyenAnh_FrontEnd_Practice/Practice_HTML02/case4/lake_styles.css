@@ -1,0 +1,144 @@
+﻿@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: 
+   Date:   
+   
+   Filename: lake_styles.css
+
+*/
+@font-face {
+   font-family: Champagne;
+   src: url(/cac_champagne.woff) format('woff'),
+      url(/cac_champagne.ttf) format('truetype');
+}
+
+@font-face {
+   font-family: DobkinPlain;
+   src: url(/DobkinPlain.woff) format('woff'),
+   url(/DobkinPlain.ttf) format('truetype');
+}
+
+html {
+   background-color: #f4a261;
+}
+
+
+body {
+   background-color:bisque;
+}
+
+header > nav {
+   background-color: #2a9d8f;
+
+}
+
+header > nav > ul > li > a {
+   color: whitesmoke;
+   font-size: 1em;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 8px 5px;
+   text-decoration: none;
+}
+
+#leftcol > h1 {
+   font-size: 3em;
+   font-family: Champagne, cursive;
+   font-weight: normal;
+   margin: 20px 10px;
+}
+
+#leftcol > p
+{
+   margin: 20px 10px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#leftcol aside {
+   background-color: #f4a261;
+   padding: 5px 5px;
+}
+
+#leftcol aside:last-child {
+   background-color: #e76f51;
+}
+
+
+aside > h1 {
+   font-size: 1.5em;
+   text-align: center;
+   padding: 0px 5px 5px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+aside:first-of-type > ul > li {
+   line-height: 25px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+aside:last-child > h2 {
+   font-weight: normal;
+}
+
+aside:last-child > p {
+   margin: 8px 10px;
+}
+
+#rightcol {
+   background-color: #264653;
+   padding: 0 0 350px 0;
+}
+
+#rightcol nav h2 {
+   color: #e76f51;
+   font-weight: normal;
+   font-family: Champagne;
+   font-size: 2em;
+   padding: 2px 10px;
+   margin: 5px 10px;
+}
+
+#rightcol ul{
+   list-style-type: none;
+}
+
+#rightcol ul > li > a {
+   color: bisque;
+   text-decoration: none;
+}
+
+
+
+#rightcol blockquote {
+   margin-top: 60px;
+   font-size: 1.2em;
+   color: #e9c46a;
+
+   /* font-family: 'Courier New', Courier, monospace; */
+   quotes:  "“" "”";
+}
+
+#rightcol blockquote::before {
+   content: open-quote;
+   font-size: 3em;
+}
+
+#rightcol blockquote::after {
+   content: close-quote;
+   font-size: 3em;
+}
+
+
+
+
+footer {
+   padding: 5px 10px;
+   background-color: #2a9d8f;
+   color: whitesmoke;
+   font-size: 1.2em;
+   text-align: center;
+}

@@ -1,0 +1,53 @@
+.calendar {
+  border-spacing: 5px;
+  font-size: 8px;
+  margin: 20px auto 5px;
+  padding: 40px;
+  width: 650px;
+
+  background-image: url("/topleft.jpg"), url("./topright.jpg"),url("./bottomleft.jpg") , url("./bottomright.jpg"),  
+  url(./top.jpg), url("./left.jpg"), url(./right.jpg), url("./bottom.jpg"); 
+  background-position: top left, top right,bottom left , top right, top left,top left , top right, bottom left;
+  background-repeat: no-repeat, no-repeat,no-repeat,no-repeat,repeat-x,repeat-y,repeat-y,repeat-x ;
+}
+
+.calendar caption {
+  text-align: center;
+  float: top;
+  padding: 0 0 10px 0;
+  font-size: 16px;
+  letter-spacing: 3px;
+  width: 650px;
+}
+
+table col.weekdays {
+  width: 14%;
+}
+table col.weekends {
+  background-color: rgb(255, 232, 232);
+}
+table thead th {
+  background-color: crimson;
+  color: aliceblue;
+  letter-spacing: 5px;
+}
+
+table thead tr th {
+  height: 5%;
+}
+
+table tbody tr td {
+  height: 19%;
+  border: 1px solid grey;
+  vertical-align: top;
+}
+
+table tbody tr td h3 {
+  font-size: 8px;
+}
+
+#summary div {
+  column-width: 300px;
+  column-gap: 20px;
+  column-rule: 1px solid black;
+}
