@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mill.css">
+    <link rel="stylesheet" href="oform.css">
+</head>
+<body>
+    <header>
+        <h1>Order form</h1>
+    </header>
+
+    <form action="http://www.mill_computers.com/orders/process.cgi." id = "cOrder" method = "post">
+        <!-- Customer info -->
+        <fieldset id = "customerInfo">
+            <label for="firstname">First name </label>
+            <input type="text" name="firstname" id="firstname" required placeholder="Enter first name">
+
+            <label for="lastname">Last name </label>
+            <input type="text" name="lastname" id="lastname" required placeholder="Enter last name"">
+
+            <label for="street">Street </label>
+            <input type="text" name="street" id="street" placeholder="Enter street">
+
+            <label for="city">City </label>
+            <input type="text" name="city" id="city" placeholder="Enter city">
+
+            <label for="state">State </label>
+            <input type="text" name="state" id="state" placeholder="Enter state" required>
+
+            <label for="zip">Zip code </label>
+            <input type="text" name="zip" id="zip" placeholder="Enter zip code" pattern="^\d{5}(\-\d{4})?$">
+
+            <label for="phonenumber">Phone Number </label>
+            <input type="text" name="phonenumber" id="phonenumber" placeholder="Enter phonenumber" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+
+        </fieldset>
+
+        <!-- Computer -->
+        <fieldset id="specs">
+            <!-- Processor speed -->
+            <label for="pSpeed">Processor Speed </label>
+            <select id="pSpeed" name = "Processor Speed">
+                <option value="3.2ghz" name="pspeed">3.2 GHz</option>
+                <option value="4ghz" name="pspeed">4 GHz</option>
+                <option value="5.2ghz" name="pspeed">5.2 GHz</option>
+            </select>
+
+            <!-- Memory -->
+            <label for="mem"></label>
+            <select id="mem" name = "memory">
+                <option value="1GB" name="memory">1GB</option>
+                <option value="2GB" name="memory">2GB</option>
+                <option value="4GB" name="memory">4GB</option>
+                <option value="8GB" name="memory">8GB</option>
+            </select>
+
+            <!-- Monitor -->
+            <label for="monitor">Monitor</label>
+            <select id="monitor" name="monitor">
+                <option value="15" name="15">15"</option>
+                <option value="17" name="17">17"</option>
+                <option value="19" name="19">19"</option>
+                <option value="21" name="21">21"</option>
+            </select>
+          <!--  Hard Drive -->
+            <label for="harddrive">Hard Drive</label>
+            <select id="harddrive" name="harddrive">
+                <option value="240GB" name="240GB">240GB</option>
+                <option value="500GB" name="500GB">500GB</option>
+                <option value="750GB" name="750GB">750GB</option>
+                <option value="1TB" name="1TB">1TB</option>
+            </select>
+          <!--  DVD Burner -->
+          <label for="dvdburner">DVD Burner</label>
+            <input type="radio" name="dvdburner" value = "dvdburner_yes" id="dvdburner_yes" />
+            <input type="radio" name="dvdburner" value = "dvdburner_no" id="dvdburner_no" />
+          <!--  Tuner Card -->
+          <label for="tunercard">Tuner Card</label>
+            <input type="radio" name="tunercard" value = "tunercard_yes" id="tunercard_yes" />
+            <input type="radio" name="tunercard" value = "tunercard_no" id="tunercard_no" />
+          <!--  Media Card Reader -->
+          <label for="mediacardreader">Media Card Reader</label>
+            <input type="radio" name="mediacardreader"  value = "mediacardreader_yes" id="mediacardreader_yes" />
+            <input type="radio" name="mediacardreader" value = "mediacardreader_no" id="mediacardreader_no" />
+          <!--  Checkbox -->
+          <label for="warranty">24-month extended warranty</label>
+            <input type="checkbox" name="warranty" id="warranty" value="yes"/>
+
+          <!--  Textarea -->
+          <label for="comment">Additional Information</label>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="10"
+            placeholder="addtional information / comments"
+          ></textarea>
+
+        </fieldset>
+
+        <button class = "btn" type = "submit">Send Order</button>
+        <button class = "btn" type= "reset">Cancel Order</button>
+        <button class = "btn" type="button">Contact me</button>
+
+
+
+
+    </form>
+
+
+
+</body>
+</html>
