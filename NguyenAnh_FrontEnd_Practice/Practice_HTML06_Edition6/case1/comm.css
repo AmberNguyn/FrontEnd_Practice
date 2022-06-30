@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/* 11 */
+fieldset {
+   background-color: rgb(245,245,255);
+   margin: 15px auto;
+   padding: 5px;
+   width: 90%;
+}
+
+/* 12 */
+label {
+   display: block;
+   float: left;
+   font-size: 0.9em;
+   width: 100%;
+   margin: 5px 0;
+}
+
+/* 13 */
+input, textarea {
+   display: block;
+   float: right;
+   font-size: 0.9em;
+   width: 55%;
+   margin: 0 10px;
+}
+
+textarea {
+   height: 150px;
+}
+
+/* 14 */
+button {
+   display: block;
+   clear: both;
+   margin: 5px auto;
+   width: 200px;
+   height: 30px;
+}
+
+/* 15 */
+input:focus {
+   background-color: rgb(225,225,240);
+}
+
+/* 16 */
+input:focus:valid{
+   background-color: rgb(225,240,225);
+   background-image: url('/go.png');
+   background-position: bottom right;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+/* 17 */
+input:focus:invalid {
+   background-color: rgb(240,225,225);
+   background-image: url('/stop.png');
+   background-position: bottom right;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+

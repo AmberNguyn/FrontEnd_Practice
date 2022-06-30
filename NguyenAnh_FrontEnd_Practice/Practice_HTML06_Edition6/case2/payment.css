@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+/* 20 */
+fieldset {
+   border: none;
+   margin: 5px;
+}
+
+legend {
+   background-color: rgb(239, 198, 145);
+   color: black;
+   margin: 10px 0;
+   text-indent: 20px;
+   width: 100%;
+   border-radius: 10px;
+   clear: both;
+}
+
+/* 21 */
+label {
+   display: block;
+   margin: clear;
+   float: left;
+   font-size: 0.8em;
+   text-align: right;
+   margin: 2px 5px;
+   width: 25%;
+}
+
+/* 22 */
+input {
+   display: block;
+   float: left;
+   font-size: 0.9em;
+   width: 60%;
+   margin: 2px 0px;
+}
+
+/* 23 */
+select {
+   display: block;
+   float: left;
+   font-size: 0.9em;
+   margin: 2px;
+}
+
+
+/* 24 */
+textarea {
+   display: block;
+   float: left;
+   font-size: 0.9em;
+   height: 75px;
+   width: 60%;
+}
+
+/* #state::after {
+   clear: both;
+   content: "";
+   display: table;
+} */
+
+/* 25 */
+fieldset.optionGroup {
+   margin-left: 25%;
+}
+
+fieldset.optionGroup label {
+   display: inline;
+   float: none;
+   width: 100px;
+}
+
+/* 26 */
+fieldset.optionGroup label input{
+   display: inline;
+   float: none;
+   margin: 0px;
+   width: 20px;
+}
+
+/* 27 */
+input#csc {
+   width: 50px;
+}
+
+/* 28 */
+button[type="submit"] {
+   background-color: rgb(239, 198, 145);
+   float: none;
+   width: 150px;
+   height: 30px;
+   border-radius: 15px;  
+   margin: 10px auto;
+   display: block;
+}
+
+/* div.btn {
+   text-align: center;
+   
+} */
+
+/* 29 */
+input:focus,
+select:focus,
+textarea:focus {
+   background-color: rgb(255,218,165);
+}
+
+/* 30 */
+input:focus:invalid {
+   background-color: rgb(255,245,215);
+   background-image: url("/stop.png");
+   background-position: bottom right;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+/* 31 */
+input:focus:valid {
+   background-color: rgb(215,255,215);
+   background-image: url("/go.png");
+   background-position: bottom right;
+   background-repeat: no-repeat;
+   background-size: contain;
+
+}
+
+/* <!-- this css is to push the CSC down --> */
+.clear {
+   clear: both;
+}
+
+
