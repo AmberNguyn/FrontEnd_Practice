@@ -8,69 +8,100 @@
     font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;
  }
 
-article, aside, figure, figcaption, footer, hgroup, header, 
-section, nav {
-   display: block;
-}
 
 body {
-    width: 600px;
+    width: 70%;
     margin: 50px auto;
+    background-color: #f8edeb;
 }
 
-fieldset {
-    border: none;
+fieldset#customerInfo,
+fieldset#specs {
+    border: 1px solid #a5a58d;
+    border-radius: 15px;
     display: block;
     width: 60%;
-    margin: 10px 0px;
+    margin: 15px auto;
+    padding: 20px;
+    background-color: #fae1dd;
+
  }
 
 header h1 {
     text-transform: uppercase;
     font-size: 40px;
-    color: black;
+    color: #cb997e;
     margin: 10px auto;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid #a5a58d;
     border-radius: 15px;
-    background-color: aquamarine;
+    background-color: #ece4db;
 }
 
 /* field set - customer info */
 #customerInfo {
     height: 215px;
-    padding: 5px;
+    padding: 1px;
 }
 
 fieldset label {
-    clear: left;
+    clear: both;
     display: block;
     float: left;
-    margin: 2px 0;
+    margin-top: 1px;
     padding: 5px 0;
     width: 40%;
 }
 
-fieldset input {
+fieldset input,
+fieldset select,
+fieldset textarea {
     display: block;
     float: right;
     margin: 2px 15px;
-    padding: 2px 0;
+    padding: 4px 0;
     width: 50%;
-}
-
-/* field set - specs */
-fieldset select {
-    display: block;
-    float: right;
-    margin: 2px 15px;
-    width: 70%;
+    background-color: #fcd5ce;
+    border-width: 0.5px;
 }
 
 /* button */
 .btn {
     border: 1px solid black;
     border-radius: 15px;
-    padding: 2px;
+    padding: 5px 10px;
     margin: 10px 50px;
+}
+
+.btn-cover {
+    margin: 0px 190px;
+}
+
+.btn-send {
+    background-color: #ddbea9;
+}
+
+.btn-cancel {
+    background-color: #a5a58d;
+}
+
+.btn-contact {
+    background-color: #cb997e;
+}
+
+
+div {
+    display: block;
+    float: right;
+    width: 60%;
+}
+
+label.pc-label {
+    text-align: left;
+    vertical-align: middle;
+    margin: 0 40%;
+}
+
+select option {
+    text-align: center;
 }
