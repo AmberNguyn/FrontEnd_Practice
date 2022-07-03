@@ -27,12 +27,9 @@
       <figure>
 
          <!-- 2 -->
-         <object data="www.youtube.com/v/ie2Mspukx14"  width="320" height="200"> 
-            <embed src="www.youtube.com/v/ie2Mspukx14" width="320" height="200">
-         </object>
-
-
-
+         <object data="https://www.youtube.com/v/ie2Mspukx14" width="320" height="200">
+            <embed src="https://www.youtube.com/v/ie2Mspukx14" height="200" />
+          </object>
 
          <figcaption>Robert Frost reads <cite>The Road Not Taken</cite></figcaption>
       </figure>
@@ -69,8 +66,16 @@
             <h2>Fire and Ice</h2>
 
             <!-- 3 -->
-            <audio src="./fireice.mp3"></audio>
-            <audio src="./fireice.ogg"></audio>
+            <audio controls>
+                  <source src = "fireice.mp3" type="audio/mp3">
+                  <source src = "fireice.ogg" type="audio/ogg">
+
+               <!-- 4 -->
+                  <object type = "application/x-java-applet" data="fireice.swf" width="345" height="21">
+                     <param name="movie" value="/fireice.swf">
+                     <embed src="fireice.swf" width="345" height="21">
+                  </object>
+            </audio>
 
 
             <p>
@@ -88,7 +93,18 @@
 
          <section class="poem">
             <h2>Devotion</h2>
+            <!-- 6 -->
+            <audio controls>
+               <source src="/devotion.mp3" type="audio/mp3">
+               <source src="/devotion.ogg" type="audio/ogg">
+               
+               <object data="/devotion.swf" type="aaplication/x-java-applet">
+                  <param name="devotion" value="/devotion.swf">
+                  <embed src="/devotion.swf" width="345" height="21">
 
+               </object>
+
+            </audio>
 
             <p>
                The heart can think of no devotion<br />
