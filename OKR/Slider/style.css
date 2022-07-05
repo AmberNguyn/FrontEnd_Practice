@@ -1,0 +1,26 @@
+label{
+    display: block;
+}
+input{
+    display: block;
+}
+.container {
+    display: block;
+}
+
+h1 {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.row {
+    margin: 20px;
+}
+
+#real-progress,
+#bag-per-week-percentage,
+#escelate-call {
+    text-align: center;
+    font-style: italic;
+    color: skyblue;
+}
