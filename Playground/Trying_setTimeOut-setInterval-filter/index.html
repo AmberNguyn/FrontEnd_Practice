@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      setTimeout(() => {
+        console.log("hello");
+      }, 3000);
+
+      const id = setInterval(() => {
+        console.log(Math.random());
+      }, 2000);
+
+      clearInterval(id);
+
+      // FILTER
+      const numbers = [
+        1, 2, 3, 4, 6, 7, 8, 9, 34, 65, 76, 3, 21, 34, 5, 754, 5435, 8769, 98,
+      ];
+
+      const evenNumbers = numbers.filter((num) => {
+        return num % 2 === 0;
+      });
+
+      console.log(evenNumbers);
+
+      const movies = [
+        {
+          title: "Pretty Woman",
+          year: 1989,
+          score: 90,
+        },
+        {
+          title: "Forrest Gump",
+          year: 1995,
+          score: 95,
+        },
+        {
+          title: "Great Gatsby",
+          year: 1988,
+          score: 85,
+        },
+      ];
+
+      //get the array
+      // const goodMovies = movies.filter(movie => movie.score >= 90);
+      // console.log(goodMovies);
+
+      //get the title only
+      // const goodMovieTtitles = goodMovies.map(movie => movie.title);
+      // console.log(goodMovieTtitles);
+
+      //short cut
+      const goodMovieTtitles = movies
+        .filter((movie) => movie.score >= 90)
+        .map((movie) => movie.title);
+      console.log(goodMovieTtitles);
+
+      // REDUCE - find the lowest price
+      const prices = [1.25, 4.9, 12.5, 22.4, 2.3, 1.0];
+      const minPrice = prices.reduce((min, currentPrice) => {
+        if (min < currentPrice) {
+          return min;
+        } else {
+          return currentPrice;
+        }
+      });
+
+      //default value - the old way
+      const rollDie = function (numSide) {
+        if (numSide === undefined) {
+          numSide = 6;
+        }
+        return Math.floor(Math.random() * numSide) + 1;
+      };
+
+      //default value - the new way
+      const rollDie2 = function (numSide = 6) {
+        return Math.floor(Math.random() * numSide) + 1;
+      };
+
+      //SPREAD
+      const nums = [1, 2, 3, 4, 5];
+      Math.max(nums); //NaN -> JS doesn't understand what nums is
+      Math.max(...nums); // use SPREAD "..." -> 1 2 3 4 5
+
+      const cats = ["meow", "meowtwo"];
+      const dogs = ["rusty", "dust"];
+
+      const allPets = [...cats, ...dogs];
+
+      //DESTRUCTURING AN ARRAY
+      const ranks = [1, 2, 3, 4];
+      //this is the old way of getting value
+      // const highestRank = ranks[0];
+      // const secondRank = ranks[1];
+
+      //new way
+      const [highestRank, secondRank, ...everyoneElse] = ranks;
+
+      // DESTRUCTURING AN OBJECT
+      //old way
+      // const firstName = user.firstName;
+      // new way
+      // const { firstName } = user;
+
+      // change called name
+      // const { firstName: userFirstName } = user;
+      
+      // default if not found
+      const { firstName = "N/A" } = user;
+
+      //DESTRUCTING PARAM
+      //get value from an object
+      function fullName({ firstName, lastName }) {
+        return `${firstName} ${lastName}`;
+      }
+      
+    </script>
+  </body>
+</html>
